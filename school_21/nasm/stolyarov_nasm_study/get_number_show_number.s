@@ -1,20 +1,8 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    get_number_show_number.s                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: evgen <jonmd87@live.com>                   +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2021/03/13 14:07:09 by evgen             #+#    #+#              #
-#    Updated: 2021/03/13 15:36:44 by evgen            ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 %define LEN 5
 section .data
 	first_msg db "Please, enter first number:"
 	displMsg db "You have entered:"
-	len_first equ $-first_ms
+	len_first equ $-first_msg
 	len_dispMsg equ $-displMsg
 
 section .bss
