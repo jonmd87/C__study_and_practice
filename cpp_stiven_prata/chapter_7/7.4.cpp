@@ -1,13 +1,25 @@
-﻿#include <iostream>
-#
+﻿/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   7.4.cpp                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: evgen <jonmd87@live.com>                   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/06/01 16:22:32 by evgen             #+#    #+#             */
+/*   Updated: 2021/06/01 16:22:34 by evgen            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <iostream>
 #include <climits>
 
 using namespace			std;
 
 int						get_answer(int *num)
 {
-	char					ch;
-	
+	char				ch;
+
+	ch = 0;
 	if (!(cin >> *num))
 	{
 		cin.clear();
@@ -20,7 +32,7 @@ int						get_answer(int *num)
 	return (0);
 }
 
-size_t						factorial(unsigned int num)
+size_t						factorial(size_t num)
 {
 	long					res;
 	
@@ -33,7 +45,6 @@ size_t						factorial(unsigned int num)
 int						main(void)
 {
 	int 					num;
-	char					ch;
 	
 	num = 0;
 	cout << "enter number(or [q] for exit):" << endl;
@@ -42,7 +53,7 @@ int						main(void)
 		if (num > 0)
 		{
 			cout << "entered number " << num << endl;
-			cout << num << "! = " << factorial((unsigned int)num) << endl;
+			cout << num << "! = " << factorial((size_t)num) << endl;
 		}
 		cout << "enter new number(or [q] for exit):" << endl;
 		num = 0;
